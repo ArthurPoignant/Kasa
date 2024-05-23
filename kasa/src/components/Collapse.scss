@@ -1,0 +1,42 @@
+@import '../shared.scss';
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url("../fonts/Montserrat.ttf") format("truetype");
+}
+
+.collapse {
+  margin-bottom: 50px;
+  .collapse-top {
+    @include theme;
+    height: 52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    font-family: "Montserrat";
+    font-size: 9px;
+    padding: 0px 20px;
+    .arrow-up,.arrow-down {
+      font-size: 20px;
+    }
+  }
+  
+  .collapse-bottom {
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0px 0px 5px 5px;
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px 20px;
+    color: black;
+    background-color: #F6F6F673;
+    .collapse-bottom_text{
+      line-height: 25px;
+    }
+    .collapse-bottom_list{
+      line-height: 10px;
+    }
+  }
+}

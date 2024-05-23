@@ -1,0 +1,23 @@
+@use "../shared.scss";
+$mobile-format: 375px;
+$desktop-format: 1024px;
+
+@media (min-width: $desktop-format) {
+  .collapse {
+    width: 70%;
+    margin: 30px auto;
+    .collapse-top {
+      height: 40px;
+    }
+  }
+}
+
+@media (min-width: $mobile-format) {
+  .collapse {
+    width: 90%;
+    margin: 30px auto;
+    .collapse-top {
+      height: 40px;
+    }
+  }
+}

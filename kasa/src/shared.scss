@@ -1,0 +1,21 @@
+/*@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url("../fonts/Montserrat.ttf") format("truetype");
+}*/
+$mobile-format: 375px;
+$desktop-format: 1024px;
+
+@mixin theme($theme: #ff6060) {
+  background: $theme;
+  color: #fff;
+}
+
+@mixin whitefont() {
+  color: #000000;
+  font-family: "Montserrat";
+}
+
+@mixin blackfont() {
+  color: #fff;
+  font-family: "Montserrat";
+}
