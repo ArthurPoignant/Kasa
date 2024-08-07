@@ -11,7 +11,7 @@ export default function Collapse({ title, content }) {
     return (
         <div className="collapse">
             <div className="collapse-top" onClick={toggleCollapse}>
-                <h1>{title}</h1>
+                <p>{title}</p>
                 {isOpen ? (
                     <i className="fa-solid fa-angle-up arrow-down"></i>
                 ) : (

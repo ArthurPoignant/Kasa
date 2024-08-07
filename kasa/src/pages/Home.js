@@ -2,7 +2,7 @@ import Banner from "../components/Banner"
 import Card from "../components/Card"
 import image from "../ImageSource1.jpg"
 import data from "../data/logements.json"
-import "./Home.css"
+import "./Home.scss"
 
 export default function Home() {
     const text = "Chez vous, partout et ailleurs"

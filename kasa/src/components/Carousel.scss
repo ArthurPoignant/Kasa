@@ -1,0 +1,44 @@
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 50px;
+    margin-top: 30px;
+    position: relative;
+    svg {
+        position: absolute;
+    }
+    .carousel-svg_left {
+        rotate: -180deg;
+        left: 80px;
+    }
+    .carousel-svg_right {
+        right: 80px;
+    }
+    .carousel-img {
+        width: 100%;
+        height: 415px;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+}
+
+@media (width < 1024px) {
+    .carousel {
+        margin: 0px 20px;
+        svg {
+            width: 24px;
+        }
+        .carousel-svg_left {
+            rotate: -180deg;
+            left: 40px;
+        }
+        .carousel-svg_right {
+            right: 40px;
+        }
+        .carousel-img {
+            height: 255px;
+            margin: 0px 0px;
+        }
+    }
+}

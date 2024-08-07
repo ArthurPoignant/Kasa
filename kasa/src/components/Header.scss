@@ -6,10 +6,7 @@
 $mobile-format: 375px;
 $desktop-format: 1024px;
 
-@media (width > 1024px) {
-  body {
-    background-color: lightblue;
-  }
+@media (width >= 1024px) {
     .header {
         max-width: 100%;
         height: 68px;
@@ -23,7 +20,6 @@ $desktop-format: 1024px;
           height: 68px;
         }
         .header_button {
-          width: 209px;
           height: 34px;
           display: flex;
           flex-direction: row;
@@ -39,10 +35,7 @@ $desktop-format: 1024px;
       }
 }
 
-@media (width < 375px) {
-  body {
-    background-color: darkblue;
-  }
+@media (width < 1024px) {
     .header {
         max-width: 100%;
         height: 46px;
