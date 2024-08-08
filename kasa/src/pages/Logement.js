@@ -8,15 +8,18 @@ import "./Logement.scss"
 
 export default function Logement() {
     const idLogement = useParams();
-    const logement = data.find((logement) => logement.id === idLogement.logementId)
-    const nameArray = logement.host.name.split(' ')
+    const logement = data.find((logement) => logement.id === idLogement.logementId);
+    
     if (logement === undefined) {
         return (
             <Navigate to="*" replace={true} />
-        )
+        );
+    }
 
-    } else {
-        return <>
+    const nameArray = logement.host.name.split(' ');
+
+    return (
+        <>
             <div className="logementDetail">
                 <div className="Carousel">
                     <Carousel pictureArray={logement.pictures} />
@@ -49,5 +52,5 @@ export default function Logement() {
                 </div>
             </div>
         </>
-    }
+    );
 }
