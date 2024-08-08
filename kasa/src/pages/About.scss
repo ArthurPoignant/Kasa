@@ -2,18 +2,18 @@
 $mobile-format: 375px;
 $desktop-format: 1024px;
 
-@media (min-width: $desktop-format) {
+
   .collapse {
-    width: 70%;
+    margin: 50px;
     .collapse-top {
       height: 40px;
     }
   }
-}
 
-@media (min-width: $mobile-format) {
+
+@media (max-width: 1024px) {
   .collapse {
-    width: 90%;
+    margin: 20px;
     .collapse-top {
       height: 40px;
     }
