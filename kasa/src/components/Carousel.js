@@ -14,6 +14,15 @@ export default function Carousel({ pictureArray }) {
     setIndex(newIndex >= length ? 0 : newIndex);
   };
 
+  if (length <= 1) {
+    return (
+      <div className="carousel">
+        <img  src={pictureArray[index]} className="carousel-img" alt="logement" />
+        <p className="counter">{index+1}/{length}</p>
+      </div>
+    );
+  }
+
   return (
     <div className="carousel">
       <svg className="carousel-svg_left" onClick={handlePrevious} width="48" height="80" viewBox="0 0 48 80" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -23,6 +32,7 @@ export default function Carousel({ pictureArray }) {
       <svg className="carousel-svg_right" onClick={handleNext} width="48" height="80" viewBox="0 0 48 80" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M0.960022 72.3458L8.04002 79.4258L47.64 39.8258L8.04002 0.22583L0.960022 7.30583L33.48 39.8258L0.960022 72.3458Z" fill="white" />
       </svg>
+      <p className="counter">{index+1}/{length}</p>
     </div>
   );
 };

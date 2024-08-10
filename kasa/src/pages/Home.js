@@ -9,6 +9,7 @@ export default function Home() {
     const [logements, setLogements] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(false);
+    
 
     useEffect(() => {
         fetch("http://localhost:3000/logements.json")
@@ -30,7 +31,7 @@ export default function Home() {
     }, []);
 
     if (loading) {
-        return <div className="loading">Loading...</div>;
+        return <div className="loading"></div>;
     }
 
     if (error) {
